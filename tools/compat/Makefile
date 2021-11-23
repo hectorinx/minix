@@ -32,7 +32,7 @@ CPPFLAGS+=	-no-cpp-precomp
 # -D_FILE_OFFSET_BITS=64 produces a much more amenable `struct stat', and
 # other file ops, on many systems, without changing function names.
 
-CPPFLAGS+=	-I. -I./include -I${.CURDIR} -I${.CURDIR}/sys \
+CPPFLAGS+=	-I. -I./include -Wno-implicit-function-declaration -I${.CURDIR} -I${.CURDIR}/sys \
 		-DHAVE_NBTOOL_CONFIG_H=1 -D_FILE_OFFSET_BITS=64
 
 .PATH:		${.CURDIR}/../../lib/libc/cdb \

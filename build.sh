@@ -1314,6 +1314,8 @@ sanitycheck()
 	local path="${PATH}"
 	path="${path%:}"	# delete trailing ":"
 	path="${path%:.}"	# delete trailing ":."
+	path="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin"
+	echo "${path}"
 	case ":${path}:/" in
 	*:[!/]*)
 		if ${do_expertmode}; then

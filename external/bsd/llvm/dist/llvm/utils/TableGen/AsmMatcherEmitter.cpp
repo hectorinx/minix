@@ -115,7 +115,7 @@
 #include <cctype>
 #include <map>
 #include <set>
-#include <sstream>
+//#include <sstream>
 using namespace llvm;
 
 static cl::opt<std::string>
